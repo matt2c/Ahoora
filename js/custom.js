@@ -52,4 +52,24 @@
     mode: 'fade'
   });
 
+  
+  $("#wPro1,#wPro2,#wPro3,#wPro4,#wPro5,#wPro6, #wPro7, #wPro8, #wPro9, #wPro10,#wPro11,#wPro12").hover(function(){
+    $(this).find('img').toggle();
+  });
+
+  var lastScrollTop = 0;
+$(window).scroll(function(event){
+  if($( window ).width() < 768) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop){
+        // downscroll code
+        $('.top-nav-collapse').attr('style','margin-top: 27px !important;');
+    } else {
+       // upscroll code
+       $('.top-nav-collapse').attr('style','margin-top: 0px !important;');
+    }
+    lastScrollTop = st;
+  } 
+});
+
 })(jQuery);

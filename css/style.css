@@ -1,3 +1,17 @@
+#mobileLogo{
+  display: none;
+}
+#desktopLogo{
+  display: block;
+  width: 120px !important;
+  float: left;
+}
+
+.navbar-right {
+  float: right !important;
+  margin-right: -15px;
+}
+
 body {
   line-height: 1.4;
   font-family: 'Roboto', sans-serif;
@@ -416,6 +430,16 @@ ul.service-list li i {
   margin: -15px 0
 }
 
+.row2{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  
+}
+.column{
+  display: table;
+}
+
 .portfolio-item figure figcaption {
   display: block;
   position: absolute;
@@ -499,7 +523,7 @@ TESTIMONIAL
 }
 
 .testimonial-item ul li blockquote {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 32px;
   color: #fff;
   font-weight: 300;
@@ -507,8 +531,8 @@ TESTIMONIAL
   text-align: center;
   display: inline-block;
   width: 100%;
-  margin: 20px 0;
-  padding: 0 80px;
+  margin: 11px 0;
+  padding: 0 86px;
   position: relative;
   border: 0;
 }
@@ -767,6 +791,51 @@ cta
   transition: all 0.5s ease-in 0s;
 }
 
+ul.social-network {
+  width: 105px;
+  float: right;
+  display: flex;
+  border-right-width: 15px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+ul.social-network li {
+  height: 25px;
+  margin-left: 20px;
+  border-left-width: 0px;
+  padding-left: 0px;
+}
+
+.bx-pager-link  {
+  background-color: white !important;
+}
+ .bx-default-pager{
+  height: 33px !important;
+}
+
+#coverage{
+  background-color: #103d52;
+}
+
+#coverage h2 {
+  color: white;
+  padding-left: 30%;
+}
+#coverage li{
+  padding: 50px;
+  color: white;
+  display: inline;
+}
+
+.membershipLogo {
+  margin-top: -155px !important;
+  margin-left: -60px;
+}
+.membershipLogo li{
+  display: inline;
+  padding: left;
+}
 /***********************************
 ************************************
 Responsive media queries
@@ -792,9 +861,40 @@ Responsive media queries
 }
 
 @media (min-width: 20px) and (max-width: 450px) {
+  .header {
+    background: url('../img/bg-banner-mobile.jpg') no-repeat fixed !important;
+    background-size:96% 96% !important;
+  }
+  #mobileLogo{
+    display: block;
+    float: left;
+    width: 100px;
+  }
+
+  #topWrapper{
+    padding-top: 100px !important;
+  }
+
+  #topWrapper .row{
+    width: 100%;
+  }
+  #mobileLogo img{
+    background-size: 300px 100px;
+  }
+  #desktopLogo{
+    display: none;
+  }
+
   .navbar-default .navbar-brand {
     padding-left: 16px;
     margin-top: 0px;
+  }
+
+  .navbar-header {
+    width: 400px !important;
+  }
+  .top-nav-collapse{
+    margin-top: 27px !important;
   }
   .banner-info {
     padding-top: 40px;
@@ -849,18 +949,53 @@ Responsive media queries
     line-height: 22px;
     text-align: center;
   }
+  ul.social-network {
+    width: 105px;
+    float: left !important;
+    padding-left: 30%;
+  }
+  .bxslider li{
+    width: 400px !important;
+  }
+
+  #coverage{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #coverage h2 {
+    padding-left: 10px;
+    font-size: 24px;
+  }
+  #coverage li{
+    padding: 0px;
+    padding-left: 10px;
+    display: block;
+  }
+
+  .membershipLogo {
+    margin-top: 20px !important;
+  }
+
+  .membershipLogo img{
+    width: 80px;
+  }
+
+  .membershipLogo {
+    margin-left: -30px !important;
+  }
 }
 
-ul.social-network {
-  width: 105px;
-  float: right;
-  display: flex;
-  border-right-width: 15px;
+
+@media (min-width: 20px) and (max-width: 360px) {
+  .membershipLogo {
+    margin-left: -45px !important;
+  }
+
+  .navbar-header{
+
+    width: 359px !important;
+
+  }
 }
 
-ul.social-network li {
-  height: 25px;
-  margin-left: 20px;
-  border-left-width: 0px;
-  padding-left: 0px;
-}
+
