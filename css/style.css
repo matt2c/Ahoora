@@ -815,16 +815,16 @@ ul.social-network li {
 }
 
 #coverage{
-  background-color: #103d52;
+  background-color: #F3F4F8;
 }
 
 #coverage h2 {
-  color: white;
+  color: #67696c;
   padding-left: 30%;
 }
 #coverage li{
   padding: 50px;
-  color: white;
+  color: #6fa0c5;
   display: inline;
 }
 
